@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <style>
+        .basic{
+            height: 30%;
+            width: 90%;
+            /* border: 1px solid black; */
+            margin: auto;
+            display: flex;
+        }
+        .info{
+            height: 100%;
+            width: 75%;
+            /* border: 1px solid black; */
+        }
+        .photo{
+            height: 100%;
+            width: 25%;
+            border: 1px solid black;
+        }
+        .email,.password,.submit{
+            height: 15%;
+            width: 90%;
+            /* border: 1px solid black; */
+            margin: auto;
+        }
+        h1{
+            height: 7%;
+            /* border: 1px solid black; */
+        }
+        input{
+            margin-top: 5%;
+        }
+        .basic,.email,.password,h1{
+            margin-top:2% ;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <h1 align="center"> Sign Up Form</h1>
+            <div class="basic">
+                <div class="info">
+                    <label for="">First Name</label>
+                    <input type="text"><br>
+                    <label for="">Last Name</label>
+                    <input type="text"><br>
+                    <label for="">Gender</label>
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female <br>
+                    <label for="">DOB</label>
+                    <input type="date"><br>
+                    <label for="">Phone NO:</label>
+                    <input type="tel">
+                </div>
+                <div class="photo"><input type="image" src="" alt=""></div>
+            </div>
+            <div class="email">
+                <label for="">Email:</label>
+                <input type="email">
+                <br><label for="">Confirm Email:</label>
+                <input type="email">
+            </div>
+            <div class="password">
+                <label for="">Password:</label>
+                <input type="password">
+                <br><label for="">Confirm Password:</label>
+                <input type="password">
+            </div>
+            <div class="submit">
+                <input type="checkbox">Terms & Conditions
+                <br><button>Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
